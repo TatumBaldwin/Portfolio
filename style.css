@@ -26,6 +26,8 @@
 .floating_image {
     position: relative;
     top: -100px;
+    left: -8px;
     min-width: 100vw;
     z-index: -1;
 }
+
