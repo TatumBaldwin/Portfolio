@@ -1,4 +1,31 @@
-.container-fluid {
+.navbar {
     display: flex;
-    flex-direction: row;
+    z-index: 1;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    /* position: absolute; */
+    margin: 0 auto;
+}
+
+.navbutton {
+    max-height: 30px;    
+    border: none;
+    color: white;
+    background-color: transparent;
+    font-size: 25px;
+    margin-top: 30px;
+    font-family:cursive, serif, sans-serif;
+}
+
+.logo {
+    width: 5em;
+    flex-shrink: 3;
+}
+
+.floating_image {
+    position: relative;
+    top: -100px;
+    min-width: 100vw;
+    z-index: -1;
 }
