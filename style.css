@@ -1,9 +1,14 @@
+body {
+    background-color: #a5978d;
+}
+
 .navbar {
     display: flex;
     z-index: 1;
     flex-direction:row;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content:center;
+    align-content: center;
     /* position: absolute; */
     margin: 0 auto;
 }
@@ -15,6 +20,7 @@
     background-color: transparent;
     font-size: 25px;
     margin-top: 30px;
+    padding: 0px 40px;
     font-family:cursive, serif, sans-serif;
 }
 
@@ -29,5 +35,70 @@
     left: -8px;
     min-width: 100vw;
     z-index: -1;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
+            /*hide ham*/
+            
+@media only screen and (min-width:437px) {
+    #hamnav, #hamitems {
+        display: none;
+    }
+}
+
+
+            /*Adjust page for smaller screen:hide logo*/
+
+@media only screen and (max-width: 761px) {
+
+    .navbutton {
+        padding: 0px 10px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .floating_image {
+        top: -100px;
+    }
+
+}
+
+             /* hide nav*/
+
+@media only screen and (max-width: 437px) {
+    .navbar {
+        display: none;
+    }
+
+}
+
+            /* show hamburger */
+@media screen and (max-width: 768px){
+    /* (A) BREAK INTO VERTICAL MENU */
+    #hamitems a {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-top: 1px solid #333;
+    }
+   
+    /* (B) SHOW HAMBURGER ICON */
+    #hamnav label { 
+      display: inline-block; 
+      color: white;
+      background:  transparent;
+      font-style: normal;
+      font-size: 1.2em;
+      padding: 10px;
+    }
+  
+    /* (C) TOGGLE SHOW/HIDE MENU */
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems { display: block; }
+  }
+    
