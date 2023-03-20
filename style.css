@@ -1,5 +1,6 @@
 body {
     background-color: rgb(201, 185, 185, .4);
+    font-family: cursive;
 }
 
 .navbar {
@@ -29,6 +30,10 @@ body {
     flex-shrink: 3;
 }
 
+.ham-logo {
+    visibility: hidden;
+}
+
 .floating_image {
     position: relative;
     top: -100px;
@@ -38,8 +43,47 @@ body {
     display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: -100px;
   width: 50%;
 }
+
+#intro-container {
+    display: flex;
+    align-items: center;
+}
+
+.intro {
+    padding: 20px;
+    margin-top: 30px;
+    font-family: serif;
+    font-size: 20px;
+}
+
+.intro-p {
+    margin-top: -20px;
+    margin-left: 20px;
+    font-family: serif;
+    font-size: 17px;
+}
+
+.my_work {
+    margin-left: 20px;
+    width: 200px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: cursive;
+    background-color: rgb(192, 142, 151);
+    color: white;
+    border: none;
+    filter: drop-shadow(5px 5px 1px rgba(0, 0, 0, 0.25));
+    
+}
+
+
+
+
+
+
 
             /*hide ham for larger browsers*/
             
@@ -65,7 +109,6 @@ body {
     .floating_image {
         top: -100px;
     }
-
 }
 
 
@@ -73,6 +116,8 @@ body {
             /* show hamburger */
 @media screen and (max-width: 768px){
     /* (A) BREAK INTO VERTICAL MENU */
+    
+    
     #hamnav {
      position: absolute;
     }
@@ -110,3 +155,4 @@ body {
     }
 
 }
+
