@@ -66,7 +66,7 @@ body {
     font-size: 17px;
 }
 
-.my_work {
+.my_work_button {
     margin-left: 20px;
     width: 200px;
     padding: 10px;
@@ -79,17 +79,30 @@ body {
     
 }
 
+.my-work-title {
+    
+    padding: 10px 100px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgb(192, 142, 151);
+    color: white;
+    font-size: 3em;
+}
+
 #my_work {
     display: flex;
     flex-wrap: wrap;
-
+    justify-content: center;
 }
 
 
 
 .card {
-    margin: 50px 20px;
     background-color: white;
+    margin: 30px;
     border: 10px solid white
 }
 
