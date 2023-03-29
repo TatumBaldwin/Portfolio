@@ -3,6 +3,16 @@ body {
     font-family: cursive;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: grey;
+}
+
+
 .navbar {
     display: flex;
     z-index: 1;
@@ -47,7 +57,7 @@ body {
   width: 50%;
 }
 
-#intro-container {
+#about_me {
     display: flex;
     align-items: center;
 }
@@ -60,10 +70,24 @@ body {
 }
 
 .intro-p {
+    text-indent: 1in;
     margin-top: -20px;
     margin-left: 20px;
     font-family: serif;
-    font-size: 17px;
+    font-size: 1.5em;
+}
+
+.education_paragraph {
+    font-size: 1.5em;
+    text-indent: 1in;
+    font-family: serif;
+    margin-left: 20px;
+}
+
+
+li {
+    font-size: 2em;
+    list-style: disc;
 }
 
 .my_work_button {
@@ -134,12 +158,12 @@ body{
 	display: flex;
 	flex-wrap: wrap;
 }
-ul{
+ .footer-col li{
 	list-style: none;
 }
 .footer{
 	background-color: rgb(192, 142, 151);
-    padding: 70px 0;
+    padding: 5px 5px;
 }
 .footer-col{
    width: 25%;

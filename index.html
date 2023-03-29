@@ -13,11 +13,13 @@
      <!-- Nav Bar -->
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <button class="about navbutton"> About </button>
-      <button class="education navbutton"> Education </button>
+      <button class="about navbutton"><a href="#about_me">About</a> </button>
+      <button class="education navbutton"><a href="#Education"> Education</a> </button>
+
       <img class="logo" src="IMAGES/Main-Logo.svg" alt="Tantalizing Designs logo">
-      <button class="work navbutton"> My Work </button>
-      <button class="contact navbutton"> Contact </button>
+
+      <button class="work navbutton"><a href="#my_work"> My Work </a></button>
+      <button class="contact navbutton"><a href="#contact"> Contact </a></button>
     </nav>
 
     <!-- Hamburger menu -->
@@ -30,10 +32,10 @@
  
   <!-- MENU ITEMS -->
   <div id="hamitems">
-    <a href="a.html">About</a>
-    <a href="b.html">Education</a>
-    <a href="c.html">My Work</a>
-    <a href="d.html">Contact</a>
+    <a href="#about_me">About</a>
+    <a href="#Education">Education</a>
+    <a href="#my_work">My Work</a>
+    <a href="#contact">Contact</a>
   </div>
 </nav>
 
@@ -45,20 +47,30 @@
 
     <!-- Intro -->
 
-    <div id="intro-container">
+    <div id="about_me">
       <p class="intro"> My name is </p>
 
       <h1> Tatum Baldwin </h1>
 
     </div>     
- <p class="intro-p"> I'm a graphic design artist that enjoys visual design and personal branding. I'm currently attending North Idaho College as an honors student in the graphic design program. I have always enjoyed art, specifically the task of combining important concepts into one coherant design.   </p>
+ <p class="intro-p"> I'm a graphic design artist that enjoys visual design and personal branding. I'm currently attending North Idaho College as an honors student in the graphic design program. I have always enjoyed art, specifically the task of combining important concepts into one coherant design.    </p>
 
-      <button class="my_work_button"> See my work here </button>
+      <button class="my_work_button"><a href="#my_work"> See my work here </a></button>
 
               <!-- My education -->
    
-    <h1 class="my-work-title"> My Education</h1>
- <p> I am currently a student at North Idaho College</p>
+    <h1 class="my-work-title" id="Education"> My Education</h1>
+ <p class="education_paragraph"> I am currently a student at North Idaho College studying graphic design. During the program I have acomplished a high GPA of 3.910 and am a current member of the Phi Theta Kappa Honors Society. I have designed many different things, which you can view below. I have learned how to create business packages, newsletters, posters, magazine covers, animation, websites and so much more. I am confident that I can learn any new software, but these are the ones I am currently farmilliar with:
+  <ul>
+    <li> Adobe Illustrator</li>
+    <li> Adobe Photoshop</li>
+    <li> Procreate</li>
+    <li> Guthub </li>
+    <li> VS Code</li>
+    <li> Figma</li>
+  </ul>
+  
+ </p>
 
 
       <!-- My work -->
@@ -122,30 +134,17 @@
 
               <!-- FOOTER -->
 
-      <footer class="footer">
+      <footer class="footer" id="contact">
         <div class="container">
           <div class="row">
             <div class="footer-col">
               <h4>Contact me:</h4>
               <ul>
 
-                <li><a href="#">(208)659-3863</a></li>
-                <li><a href="#">tatumjbaldwin@gmail.com</a></li>
+                <li><a href="tel:2086593863">(208)659-3863</a></li>
+                <li><a href="mailto:tatumjbaldwin@gmail.com">tatumjbaldwin@gmail.com</a></li>
               </ul>
             </div>
-
-
-          <!-- </div>
-            <div class="footer-col">
-              <h4>follow me</h4>
-              <div class="social-links">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-              </div>
-            </div>
-          </div> -->
 
         </div>
      </footer>
