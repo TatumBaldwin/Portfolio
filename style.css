@@ -1,6 +1,6 @@
 body {
     background-color: rgb(201, 185, 185, .4);
-    font-family: cursive;
+    font-family: 'Dancing Script', cursive;
 }
 
 a {
@@ -32,7 +32,7 @@ a:hover {
     font-size: 25px;
     margin-top: 30px;
     padding: 0px 40px;
-    font-family:cursive, serif, sans-serif;
+    font-family: 'Dancing Script', cursive;
 }
 
 .logo {
@@ -51,10 +51,10 @@ a:hover {
     min-width: 100vw;
     z-index: -1;
     display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: -100px;
-  width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -100px;
+    width: 50%;
 }
 
 #about_me {
@@ -84,10 +84,16 @@ a:hover {
     margin-left: 20px;
 }
 
+.sofware_logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+}
 
-li {
-    font-size: 2em;
-    list-style: disc;
+.soft-logo {
+    width: 100px;
+    margin-left: 200px;
 }
 
 .my_work_button {
@@ -95,7 +101,7 @@ li {
     width: 200px;
     padding: 10px;
     font-size: 20px;
-    font-family: cursive;
+    font-family: 'Dancing Script', cursive;
     background-color: rgb(192, 142, 151);
     color: white;
     border: none;
@@ -104,25 +110,24 @@ li {
 }
 
 .my-work-title {
-    
     padding: 10px 100px;
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
     overflow: hidden;
     text-align: center;
-    background-color: rgb(192, 142, 151);
-    color: white;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    color: rgb(192, 142, 151);;
     font-size: 3em;
 }
+
 
 #my_work {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-
-
 
 .card {
     background-color: white;
@@ -131,10 +136,10 @@ li {
 }
 
 .card-title {
-    font-size: 1.2em;
+    font-size: 1.5em;
     text-align: center;
     margin: 4px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: 'Dancing Script', cursive;
 }
 
 .card-img-top {
@@ -172,7 +177,6 @@ body{
 .footer-col h4{
 	font-size: 18px;
 	color: #ffffff;
-	text-transform: capitalize;
 	margin-bottom: 35px;
 	font-weight: 500;
 	position: relative;
@@ -192,7 +196,6 @@ body{
 }
 .footer-col ul li a{
 	font-size: 16px;
-	text-transform: capitalize;
 	color: #ffffff;
 	text-decoration: none;
 	font-weight: 300;
