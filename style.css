@@ -62,12 +62,14 @@ a:hover {
     align-items: center;
 }
 
-.intro {
-    padding: 20px;
-    margin-top: 30px;
-    font-family: serif;
-    font-size: 20px;
+.my_name {
+    border-bottom: 1px solid rgb(192, 142, 151);
+    margin: 40px 20px;
+    color: rgb(3, 3, 3);
+    text-shadow: 2px 2px rgb(192, 142, 151);
+    font-family: 'Dancing Script', cursive;
 }
+
 
 .intro-p {
     text-indent: 1in;
@@ -116,10 +118,12 @@ a:hover {
     margin-bottom: 50px;
     overflow: hidden;
     text-align: center;
-    border-bottom: 1px solid;
-    border-top: 1px solid;
-    color: rgb(192, 142, 151);;
+    border-bottom: 1px solid rgb(192, 142, 151);
+    border-top: 1px solid rgb(192, 142, 151);
+    color: rgb(0, 0, 0);;
+    text-shadow: 2px 2px rgb(192, 142, 151);
     font-size: 3em;
+    font-family: 'Dancing Script', cursive;
 }
 
 
@@ -130,16 +134,17 @@ a:hover {
 }
 
 .card {
-    background-color: white;
+    background-color: rgb(192, 142, 151);
     margin: 30px;
-    border: 10px solid white
 }
 
 .card-title {
     font-size: 1.5em;
     text-align: center;
     margin: 4px;
+    padding: 0px;
     font-family: 'Dancing Script', cursive;
+    color: white;
 }
 
 .card-img-top {
