@@ -20,6 +20,10 @@ img {
     box-shadow: rgb(192, 142, 151) 10px 5px;
 }
 
+video {
+    width: 100%;
+}
+
 p {
     text-indent: 0.5in;
     font-family:'Times New Roman', Times, serif;
