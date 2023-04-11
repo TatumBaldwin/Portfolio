@@ -14,7 +14,7 @@ h1 {
 }
 
 img {
-    width: 50%;
+    width: 90%;
     margin: 10px 20px;
     border: 2px solid  rgb(152, 88, 101);
     box-shadow: rgb(192, 142, 151) 10px 5px;
@@ -36,4 +36,17 @@ p {
 
 .bp {
     width: 700px;
+}
+
+@media only screen and (min-width: 761px) {
+    img {
+        width: 50%;
+    }
+}
+
+
+@media only screen and (min-width: 1400px) {
+    img {
+        width: 30%;
+    }
 }
