@@ -310,6 +310,10 @@ body{
     #hamnav input:checked ~ #hamitems { display: block; }
   }
     
+  .floating_image {
+    margin-top: -20px;
+  }
+
              /* hide nav*/
 
 @media only screen and (max-width: 436px) {
