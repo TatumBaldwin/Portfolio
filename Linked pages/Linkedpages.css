@@ -2,6 +2,30 @@ body {
     background-color: antiquewhite;
 }
 
+.back {
+    text-decoration: none;
+    color: white;
+}
+.back-btn {
+    
+        height: 55px;
+        width: 60px;  
+        font-size: 2em;
+        font-family: 'Dancing Script', cursive;
+        border-radius: 50%;
+        border: none;
+        background-color: rgb(192, 142, 151);
+        color: white;
+        text-align: center;
+        box-shadow: 3px -2px 8px rgb(58, 34, 38);
+        cursor: pointer;
+}
+
+.back-btn:active {
+     box-shadow: none;
+     background-color: rgb(176, 129, 138);
+}
+
 .wrapper {
     display: flex;
     flex-wrap: wrap
@@ -50,3 +74,4 @@ p {
         width: 20%;
     }
 }
+
