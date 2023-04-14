@@ -1,10 +1,15 @@
 body {
     background-color: antiquewhite;
+    cursor: url(/Components/Cursor_daisy.png), wait;
 }
 
 .back {
     text-decoration: none;
     color: white;
+}
+
+a {
+    cursor: url(/Components/Cursor_daisy.png), wait;
 }
 .back-btn {
     

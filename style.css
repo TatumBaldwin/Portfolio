@@ -1,16 +1,22 @@
 body {
     background-color: rgb(201, 185, 185, .4);
     font-family: 'Dancing Script', cursive;
+    cursor: url(/Components/Cursor_daisy.png), wait;
 }
+
+
 
 a {
     text-decoration: none;
     color: white;
+    cursor: url(/Components/Cursor_daisy.png), wait;
 }
 
 a:hover {
     color: grey;
+    cursor: url(/Components/Cursor_daisy.png), wait;
 }
+
 
 
 .navbar {
