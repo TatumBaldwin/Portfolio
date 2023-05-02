@@ -53,6 +53,7 @@ a:hover {
 
 .floating_image {
     position: relative;
+    border: 2px solid rgb(192, 142, 151);
     top: -100px;
     left: -8px;
     min-width: 100vw;
@@ -64,30 +65,41 @@ a:hover {
     width: 50%;
 }
 
-#about_me {
+.about-containter {
     display: flex;
+    flex-direction: row;
     align-items: center;
+    margin: 40px;
+    font-size: 80%;
+}
+
+.headshot {
+    margin: 10px;
+    border: 2px solid rgb(192, 142, 151);
+    width: 35%;
+    height: 35%;
 }
 
 .my_name {
     border-bottom: 1px solid rgb(192, 142, 151);
-    margin: 40px 20px;
+    margin-left: 2%;
     color: rgb(3, 3, 3);
     text-shadow: 2px 2px rgb(192, 142, 151);
     font-family: 'Dancing Script', cursive;
+    font-size: 4vw;
 }
 
 
 .intro-p {
     text-indent: 1in;
-    margin-top: -20px;
-    margin-left: 20px;
+    text-align: right;
+    margin-left: 5%;
     font-family: serif;
-    font-size: 1.5em;
+    font-size: 2vw;
 }
 
 .education_paragraph {
-    font-size: 1.5em;
+    font-size: 2vw;
     text-indent: 1in;
     font-family: serif;
     margin-left: 20px;
@@ -97,16 +109,13 @@ a:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100vw;
 }
-
 .soft-logo {
-    width: 100px;
-    margin-left: 200px;
+    width: 5vw;
 }
 
 .my_work_button {
-    margin-left: 20px;
+    margin-left: 2%;
     width: 200px;
     padding: 10px;
     font-size: 20px;
@@ -129,7 +138,7 @@ a:hover {
     border-top: 1px solid rgb(192, 142, 151);
     color: rgb(0, 0, 0);;
     text-shadow: 2px 2px rgb(192, 142, 151);
-    font-size: 3em;
+    font-size: 4vw;
     font-family: 'Dancing Script', cursive;
 }
 
@@ -282,6 +291,8 @@ body{
 
 
 
+
+
             /* show hamburger */
 @media screen and (max-width: 768px){
     /* (A) BREAK INTO VERTICAL MENU */
@@ -314,11 +325,11 @@ body{
     /* (C) TOGGLE SHOW/HIDE MENU */
     #hamitems { display: none; }
     #hamnav input:checked ~ #hamitems { display: block; }
+
+ 
+
   }
     
-  .floating_image {
-    margin-top: -20px;
-  }
 
              /* hide nav*/
 
