@@ -41,10 +41,42 @@ a:hover {
 }
 
 
+            /* Hamburger nav  */
+    .hidden {
+        visibility: hidden;
+    }
 
-.ham-logo {
-    visibility: hidden;
-}
+   #hamnav {
+     position: relative;
+    }
+
+    #hamitems a {
+      box-sizing: border-box;
+      text-align: center;
+      display: block;
+      width: 100%;
+      padding: 10px;
+      text-decoration: none;
+      color: white;
+      background: rgb(201, 185, 185, .4);
+    }
+   
+    /* (B) SHOW HAMBURGER ICON */
+    #hamnav label { 
+      color: white;
+      background:  transparent;
+      font-style: normal;
+      font-size: 1.2em;
+      padding: 10px;
+    }
+  
+    /* (C) TOGGLE SHOW/HIDE MENU */
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems { display: block; }
+
+ 
+
+
 
 .about-containter {
     display: flex;
@@ -93,7 +125,7 @@ a:hover {
 
 
 .intro-p {
-    text-indent: 1in;
+    text-indent: 5vw;
     text-align: right;
     font-family: serif;
     font-size: 1.6vw;
@@ -116,7 +148,7 @@ a:hover {
 
 .education_paragraph {
     font-size: 2vw;
-    text-indent: 1in;
+    text-indent: 5vw;
     font-family: serif;
     font-size: 1.6vw;
     margin: 7vw;
@@ -147,126 +179,156 @@ a:hover {
     border: 1px solid rgb(192, 142, 151);
     background-color: rgb(227, 204, 208);
     text-shadow: 2px 2px rgb(192, 142, 151);
-    font-size: 4vw;
+    font-size: 3vw;
     font-family: 'Dancing Script', cursive;
 }
 
 
-#my_work {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+             /* My cards */
 
-.card {
+
+             .carousel {
+                margin-left: 15%;
+                margin-right: 15%;
+            }
+            
+            ul.slides {
+                display: block;
+                position: relative;
+                height: 600px;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                list-style: none;
+            }
+            
+            .slides * {
+                user-select: none;
+                -ms-user-select: none;
+                -moz-user-select: none;
+                -khtml-user-select: none;
+                -webkit-user-select: none;
+                -webkit-touch-callout: none;
+            }
+            
+            ul.slides input {
+                display: none; 
+            }
+            
+            
+            .slide-container { 
+                display: block; 
+            }
+            
+            .slide-image {
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                opacity: 0;
+                transition: all .7s ease-in-out;
+            }   
+            
+            .slide-image img {
+                width: auto;
+                min-width: 100%;
+                height: 100%;
+            }
+            
+            .carousel-controls {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: 999;
+                font-size: 100px;
+                line-height: 600px;
+                color: #fff;
+            }
+            
+            .carousel-controls label {
+                display: none;
+                position: absolute;
+                padding: 0 20px;
+                opacity: 0;
+                transition: opacity .2s;
+                cursor: pointer;
+            }
+            
+            .slide-image:hover + .carousel-controls label{
+                opacity: 0.5;
+            }
+            
+            .carousel-controls label:hover {
+                opacity: 1;
+            }
+            
+            .carousel-controls .prev-slide {
+                width: 49%;
+                text-align: left;
+                left: 0;
+            }
+            
+            .carousel-controls .next-slide {
+                width: 49%;
+                text-align: right;
+                right: 0;
+            }
+            
+            .carousel-dots {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 20px;
+                z-index: 999;
+                text-align: center;
+            }
+            
+            .carousel-dots .carousel-dot {
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: #fff;
+                opacity: 0.5;
+                margin: 10px;
+            }
+            
+            input:checked + .slide-container .slide-image {
+                opacity: 1;
+                transform: scale(1);
+                transition: opacity 1s ease-in-out;
+            }
+            
+            input:checked + .slide-container .carousel-controls label {
+                 display: block; 
+            }
+            
+            input#img-1:checked ~ .carousel-dots label#img-dot-1,
+            input#img-2:checked ~ .carousel-dots label#img-dot-2,
+            input#img-3:checked ~ .carousel-dots label#img-dot-3,
+            input#img-4:checked ~ .carousel-dots label#img-dot-4,
+            input#img-5:checked ~ .carousel-dots label#img-dot-5,
+            input#img-6:checked ~ .carousel-dots label#img-dot-6 {
+                opacity: 1;
+            }
+            
+            
+            input:checked + .slide-container .nav label { display: block; }
+            
+             
+             /* Footer */
+
+
+.footer {
+    width: 100vw;
+    height: 20vw;
+    border: 1px solid rgb(192, 142, 151);
     background-color: rgb(227, 204, 208);
-    margin: 30px;
-    height: 500px;
-}
-
-.card-title {
-    font-size: 1.5em;
-    text-align: center;
-    margin: 4px;
-    padding: 0px;
-    font-family: 'Dancing Script', cursive;
-    color: rgb(66, 58, 58)
-}
-
-.card-img-top {
-    width: 18rem;
-    overflow: hidden;
-    border: 3px solid rgb;
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-body{
-	line-height: 1.5;
-	font-family: 'Poppins', sans-serif;
-}
-
-.container{
-	max-width: 1170px;
-	margin:auto;
-}
-.row{
-	display: flex;
-	flex-wrap: wrap;
-}
- .footer-col li{
-	list-style: none;
-}
-.footer{
-	background-color: rgb(192, 142, 151);
-    padding: 5px 5px;
-}
-.footer-col{
-   width: 25%;
-   padding: 0 15px;
-}
-.footer-col h4{
-	font-size: 18px;
-	color: #ffffff;
-	margin-bottom: 35px;
-	font-weight: 500;
-	position: relative;
-}
-.footer-col h4::before{
-	content: '';
-	position: absolute;
-	left:0;
-	bottom: -10px;
-	background-color: #fefefe;
-	height: 2px;
-	box-sizing: border-box;
-	width: 50px;
-}
-.footer-col ul li:not(:last-child){
-	margin-bottom: 10px;
-}
-.footer-col ul li a{
-	font-size: 16px;
-	color: #ffffff;
-	text-decoration: none;
-	font-weight: 300;
-	color: #ffffff;
-	display: block;
-	transition: all 0.3s ease;
-}
-.footer-col ul li a:hover{
-	color: #ffffff;
-	padding-left: 8px;
-}
-.footer-col .social-links a{
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	background-color: rgba(255,255,255,0.2);
-	margin:0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	color: #ffffff;
-	transition: all 0.5s ease;
-}
-.footer-col .social-links a:hover{
-	color: #ffffff;
-	background-color: #ffffff;
-}
-
-/*responsive*/
-@media(max-width: 767px){
-  .footer-col{
-    width: 50%;
-    margin-bottom: 30px;
-}
-}
-@media(max-width: 574px){
-  .footer-col{
-    width: 100%;
-}
-}
 
 
 
@@ -281,56 +343,10 @@ body{
 }
 
 
-            /*Adjust image and hide logo for smaller browser*/
-
-@media only screen and (max-width: 761px) {
-
-    .navbutton {
-        padding: 0px 10px;
-    }
-
-}
 
 
 
 
-
-            /* show hamburger */
-@media screen and (max-width: 768px){
-    /* (A) BREAK INTO VERTICAL MENU */
-    
-    
-    #hamnav {
-     position: absolute;
-    }
-
-    #hamitems a {
-      box-sizing: border-box;
-      display: block;
-      width: 100%;
-      padding: 10px;
-      text-decoration: none;
-      color: white;
-      background: rgb(201, 185, 185, .4);
-    }
-   
-    /* (B) SHOW HAMBURGER ICON */
-    #hamnav label { 
-      display: inline-block; 
-      color: white;
-      background:  transparent;
-      font-style: normal;
-      font-size: 1.2em;
-      padding: 10px;
-    }
-  
-    /* (C) TOGGLE SHOW/HIDE MENU */
-    #hamitems { display: none; }
-    #hamnav input:checked ~ #hamitems { display: block; }
-
- 
-
-  }
     
 
              /* hide nav*/
@@ -341,4 +357,3 @@ body{
     }
 
 }
-
