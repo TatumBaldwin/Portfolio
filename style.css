@@ -69,10 +69,9 @@ a:hover {
 }
 
 .logo {
-    position: absolute;
-    max-width: 20vw;
-    margin-left: 46vw;
-    margin-top: 20vw;
+ position: absolute;
+ width: 13vw;
+ margin-top: 28vw;
 }
 
 
