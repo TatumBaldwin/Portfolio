@@ -2,67 +2,48 @@ body {
     background-color: rgb(201, 185, 185, .4);
     font-family: 'Dancing Script', cursive;
     cursor: url(/Components/Cursor_daisy.png), wait;
+    margin: 4vw;
 }
 
 
 
 a {
     text-decoration: none;
-    color: white;
-    cursor: url(/Components/Cursor_daisy.png), wait;
+    color: rgb(66, 58, 58);
+    text-shadow: 1px 1px rgb(192, 142, 151);
 }
 
 a:hover {
     color: grey;
-    cursor: url(/Components/Cursor_daisy.png), wait;
 }
 
 
 
 .navbar {
     display: flex;
+    gap: 4vw;
     z-index: 1;
     flex-direction:row;
     flex-wrap: wrap;
     justify-content:center;
     align-content: center;
-    /* position: absolute; */
-    margin: 0 auto;
+    padding: 2vw;
+    border: 1px solid rgb(192, 142, 151);
+    background-color: rgb(227, 204, 208);
 }
 
-.navbutton {
-    max-height: 30px;    
+.navbutton {   
     border: none;
-    color: white;
     background-color: transparent;
-    font-size: 25px;
-    margin-top: 30px;
-    padding: 0px 40px;
+    font-size: 3vw;
     font-family: 'Dancing Script', cursive;
     text-shadow: 2px 2px rgb(130, 96, 102);
 }
 
-.logo {
-    width: 5em;
-    flex-shrink: 3;
-}
+
 
 .ham-logo {
     visibility: hidden;
-}
-
-.floating_image {
-    position: relative;
-    border: 2px solid rgb(192, 142, 151);
-    top: -100px;
-    left: -8px;
-    min-width: 100vw;
-    z-index: -1;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: -100px;
-    width: 50%;
 }
 
 .about-containter {
@@ -73,59 +54,89 @@ a:hover {
     font-size: 80%;
 }
 
+
+.herocontain {
+    display: flex;
+    justify-content: center;
+    margin: 5vw;
+}
+
+
+.heroimg {
+    width: 65vw;
+    position: relative;
+    border: 2px solid rgb(192, 142, 151);
+}
+
+.logo {
+    position: absolute;
+    max-width: 20vw;
+    margin-left: 46vw;
+    margin-top: 20vw;
+}
+
+
+
 .headshot {
     margin: 10px;
     border: 2px solid rgb(192, 142, 151);
-    width: 35%;
-    height: 35%;
+    width: 30%;
+    height: 30%;
 }
 
 .my_name {
     border-bottom: 1px solid rgb(192, 142, 151);
-    margin-left: 2%;
     color: rgb(3, 3, 3);
     text-shadow: 2px 2px rgb(192, 142, 151);
     font-family: 'Dancing Script', cursive;
-    font-size: 4vw;
+    font-size: 2.5vw;
 }
 
 
 .intro-p {
     text-indent: 1in;
     text-align: right;
-    margin-left: 5%;
     font-family: serif;
-    font-size: 2vw;
+    font-size: 1.6vw;
+    margin: 2vw;
 }
+
+
+.my_work_button {
+    margin-left: 4%;
+    width: 40vw;
+    padding: 1vw;
+    font-size: 3vw;
+    font-family: 'Dancing Script', cursive;
+    border: 1px solid rgb(192, 142, 151);
+    background-color: rgb(227, 204, 208);
+    color: rgb(78, 55, 55);
+    
+}
+
 
 .education_paragraph {
     font-size: 2vw;
     text-indent: 1in;
     font-family: serif;
-    margin-left: 20px;
+    font-size: 1.6vw;
+    margin: 7vw;
 }
 
 .sofware_logos {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-}
-.soft-logo {
-    width: 5vw;
+    gap: 1.5vw;
+    width: 90vw;
+    justify-content: center;
 }
 
-.my_work_button {
-    margin-left: 2%;
-    width: 200px;
-    padding: 10px;
-    font-size: 20px;
-    font-family: 'Dancing Script', cursive;
-    background-color: rgb(192, 142, 151);
-    color: white;
-    border: none;
-    filter: drop-shadow(5px 5px 1px rgba(0, 0, 0, 0.25));
-    
+
+.soft-logo {
+    width: 8vw;
 }
+
+
 
 .my-work-title {
     padding: 10px 100px;
@@ -134,9 +145,8 @@ a:hover {
     margin-bottom: 50px;
     overflow: hidden;
     text-align: center;
-    border-bottom: 1px solid rgb(192, 142, 151);
-    border-top: 1px solid rgb(192, 142, 151);
-    color: rgb(0, 0, 0);;
+    border: 1px solid rgb(192, 142, 151);
+    background-color: rgb(227, 204, 208);
     text-shadow: 2px 2px rgb(192, 142, 151);
     font-size: 4vw;
     font-family: 'Dancing Script', cursive;
@@ -150,7 +160,7 @@ a:hover {
 }
 
 .card {
-    background-color: rgb(192, 142, 151);
+    background-color: rgb(227, 204, 208);
     margin: 30px;
     height: 500px;
 }
@@ -161,7 +171,7 @@ a:hover {
     margin: 4px;
     padding: 0px;
     font-family: 'Dancing Script', cursive;
-    color: white;
+    color: rgb(66, 58, 58)
 }
 
 .card-img-top {
@@ -280,13 +290,6 @@ body{
         padding: 0px 10px;
     }
 
-    .logo {
-        display: none;
-    }
-
-    .floating_image {
-        top: -100px;
-    }
 }
 
 
