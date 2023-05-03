@@ -1,7 +1,6 @@
 body {
     background-color: rgb(201, 185, 185, .4);
     font-family: 'Dancing Script', cursive;
-    cursor: url(/Components/Cursor_daisy.png), wait;
     margin: 4vw;
 }
 
@@ -21,7 +20,7 @@ a:hover {
 
 .navbar {
     display: flex;
-    gap: 4vw;
+    gap: 8vw;
     z-index: 1;
     flex-direction:row;
     flex-wrap: wrap;
@@ -57,13 +56,13 @@ a:hover {
       width: 100%;
       padding: 10px;
       text-decoration: none;
-      color: white;
+      color: rgb(28, 26, 26);
       background: rgb(201, 185, 185, .4);
     }
    
     /* (B) SHOW HAMBURGER ICON */
     #hamnav label { 
-      color: white;
+      color: rgb(131, 125, 125);
       background:  transparent;
       font-style: normal;
       font-size: 1.2em;
@@ -187,156 +186,68 @@ a:hover {
              /* My cards */
 
 
-             .carousel {
-                margin-left: 15%;
-                margin-right: 15%;
-            }
-            
-            ul.slides {
-                display: block;
-                position: relative;
-                height: 600px;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                list-style: none;
-            }
-            
-            .slides * {
-                user-select: none;
-                -ms-user-select: none;
-                -moz-user-select: none;
-                -khtml-user-select: none;
-                -webkit-user-select: none;
-                -webkit-touch-callout: none;
-            }
-            
-            ul.slides input {
-                display: none; 
-            }
-            
-            
-            .slide-container { 
-                display: block; 
-            }
-            
-            .slide-image {
-                display: block;
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                opacity: 0;
-                transition: all .7s ease-in-out;
-            }   
-            
-            .slide-image img {
-                width: auto;
-                min-width: 100%;
-                height: 100%;
-            }
-            
-            .carousel-controls {
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                z-index: 999;
-                font-size: 100px;
-                line-height: 600px;
-                color: #fff;
-            }
-            
-            .carousel-controls label {
-                display: none;
-                position: absolute;
-                padding: 0 20px;
-                opacity: 0;
-                transition: opacity .2s;
-                cursor: pointer;
-            }
-            
-            .slide-image:hover + .carousel-controls label{
-                opacity: 0.5;
-            }
-            
-            .carousel-controls label:hover {
-                opacity: 1;
-            }
-            
-            .carousel-controls .prev-slide {
-                width: 49%;
-                text-align: left;
-                left: 0;
-            }
-            
-            .carousel-controls .next-slide {
-                width: 49%;
-                text-align: right;
-                right: 0;
-            }
-            
-            .carousel-dots {
-                position: absolute;
-                left: 0;
-                right: 0;
-                bottom: 20px;
-                z-index: 999;
-                text-align: center;
-            }
-            
-            .carousel-dots .carousel-dot {
-                display: inline-block;
-                width: 30px;
-                height: 30px;
-                border-radius: 50%;
-                background-color: #fff;
-                opacity: 0.5;
-                margin: 10px;
-            }
-            
-            input:checked + .slide-container .slide-image {
-                opacity: 1;
-                transform: scale(1);
-                transition: opacity 1s ease-in-out;
-            }
-            
-            input:checked + .slide-container .carousel-controls label {
-                 display: block; 
-            }
-            
-            input#img-1:checked ~ .carousel-dots label#img-dot-1,
-            input#img-2:checked ~ .carousel-dots label#img-dot-2,
-            input#img-3:checked ~ .carousel-dots label#img-dot-3,
-            input#img-4:checked ~ .carousel-dots label#img-dot-4,
-            input#img-5:checked ~ .carousel-dots label#img-dot-5,
-            input#img-6:checked ~ .carousel-dots label#img-dot-6 {
-                opacity: 1;
-            }
-            
-            
-            input:checked + .slide-container .nav label { display: block; }
-            
              
              /* Footer */
 
 
-.footer {
-    width: 100vw;
+#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90vw;
     height: 20vw;
     border: 1px solid rgb(192, 142, 151);
     background-color: rgb(227, 204, 208);
+    margin-top: 5vw;
 }
 
+#footer h3 {
+    padding: 1vw;
+    margin: auto;
+    font-size: 3vw;
+    padding-left: 30vw;
+    padding-right: 30vw;
+    text-shadow: 2px 2px rgb(192, 142, 151);
+    border-bottom: solid 1px rgb(130, 96, 102);
+    margin-bottom: 1vw;
+    
+}
 
+#footer address {
+    padding: 1vw;
+    margin: auto;
+    font-size: 2vw;
+    font-family:'Times New Roman', Times, serif;
+}
 
+#footer a {
+    padding: 1vw;
+    margin: auto;
+    font-size: 2vw;
+    font-family:'Times New Roman', Times, serif;
+}
 
+.footercontain {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    gap: 6vw;
+}
+
+.instagram {
+    width: 4vw;
+}
+
+.socialhandle {
+    display: flex;
+    align-content: center;
+}
 
 
 
             /*hide ham for larger browsers*/
             
-@media only screen and (min-width:437px) {
+@media only screen and (min-width:501px) {
     #hamnav, #hamitems {
         display: none;
     }
@@ -351,9 +262,12 @@ a:hover {
 
              /* hide nav*/
 
-@media only screen and (max-width: 436px) {
+@media only screen and (max-width: 500px) {
     .navbar {
         display: none;
     }
 
+    .hidden {
+        display: none;
+    }
 }
