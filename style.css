@@ -1,3 +1,8 @@
+
+/* INDEX HOME PAGE */
+
+
+
 body {
     background-color: rgb(201, 185, 185, .4);
     font-family: 'Dancing Script', cursive;
@@ -270,4 +275,36 @@ a:hover {
     .hidden {
         display: none;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* PORTFOLIO PAGE  */
+
+.pagetitle {
+    font-size: 5vw;
+    text-align: center;
+    margin: 10vw;
+    border-bottom: 1px solid rgb(192, 142, 151);
+}
+
+
+.herocontain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.hero {
+    width: 80vw;
 }
