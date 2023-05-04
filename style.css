@@ -293,7 +293,7 @@ a:hover {
 .pagetitle {
     font-size: 5vw;
     text-align: center;
-    margin: 10vw;
+    margin-top: 5vw;
     border-bottom: 1px solid rgb(192, 142, 151);
 }
 
@@ -302,9 +302,11 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 5vw;
 }
 
 .hero {
     width: 80vw;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 4vw;
 }
