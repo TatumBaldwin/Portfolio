@@ -422,6 +422,12 @@ a:hover {
         height: auto;
     }
 
+    .bccontain {
+        width: 30vw;
+        margin-left: 28%;
+        margin-right: 28%;
+    }
+
 }
 
 
