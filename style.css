@@ -398,7 +398,15 @@ a:hover {
 
     .ttdcontain {
         flex-wrap: none;
-    
+    }
+    .bccontain {
+        width: 90vw;
+        margin-left: 28%;
+        margin-right: 28%;
+    }
+
+    .bc {
+        width: 200px;
     }
 }
 
