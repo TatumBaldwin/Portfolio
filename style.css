@@ -395,6 +395,11 @@ a:hover {
     .flexrow {
         border: none;
     }
+
+    .ttdcontain {
+        flex-wrap: none;
+    
+    }
 }
 
 
