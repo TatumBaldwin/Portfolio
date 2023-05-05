@@ -341,11 +341,11 @@ a:hover {
     align-content: center;
     justify-content: center;
     margin-bottom: 5vw;
+    border-bottom: 1px solid rgb(192, 142, 151);
 }
 
 .description {
     font-size: 0.5vw;
-    text-indent: 5vw;
     font-family: serif;
     font-size: 1.6vw;
     margin-left: 1.5em;
@@ -387,6 +387,14 @@ a:hover {
         height: auto;
     }
 
+    .description {
+        padding: 20px;
+        border-bottom: 1px solid rgb(192, 142, 151);
+    }
+
+    .flexrow {
+        border: none;
+    }
 }
 
 
