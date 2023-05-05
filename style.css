@@ -310,3 +310,97 @@ a:hover {
     margin-right: 6%;
     margin-top: 4vw;
 }
+
+
+
+/* TANTALIZING DESIGN PAGE */
+
+
+.ttdcontain {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 2vw;
+
+}
+
+
+.ttdhead {
+    font-size: 2.5vw;
+    text-shadow: 2px 2px rgb(192, 142, 151);
+    border-bottom: 1px solid rgb(192, 142, 151);
+}
+
+
+.flexrow {
+    display: flex;
+    flex-direction: row;
+    max-width: 90vw;
+    margin: auto;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 5vw;
+}
+
+.description {
+    font-size: 0.5vw;
+    text-indent: 5vw;
+    font-family: serif;
+    font-size: 1.6vw;
+    margin-left: 1.5em;
+}
+
+.ttdimg {
+    display: block;
+    max-width:430px;
+    max-height:400px;
+    margin: auto;
+    width: auto;
+    height: auto;
+}
+
+
+.bccontain {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: auto;
+    gap: 2vw;
+}
+
+
+
+@media screen and (max-width:724px)  {
+    
+    .flexrow {
+        display: flex;
+        flex-direction: column-reverse;
+        max-width: 80vw;
+    }
+
+    .ttdimg {
+        display: block;
+        max-width:230px;
+        max-height:300px;
+        width: auto;
+        height: auto;
+    }
+
+}
+
+
+
+@media screen and (min-width:1509px)  {
+    
+    .ttdimg {
+        display: block;
+        max-width:530px;
+        max-height:600px;
+        width: auto;
+        height: auto;
+    }
+
+}
+
+
