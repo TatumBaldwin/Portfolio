@@ -275,6 +275,14 @@ a:hover {
     .hidden {
         display: none;
     }
+
+    .intro-p {
+        font-size: 2.5vw;
+    }
+
+    .education_paragraph {
+        font-size: 2.7vw;
+    }
 }
 
 
@@ -313,7 +321,7 @@ a:hover {
 
 
 
-/* TANTALIZING DESIGN PAGE */
+/* TANTALIZING DESIGN AND SLITHERING SANCTUARY PAGE */
 
 
 .ttdcontain {
@@ -408,6 +416,10 @@ a:hover {
     .bc {
         width: 200px;
     }
+
+    .description {
+        font-size: 2.5vw;
+    }
 }
 
 
@@ -431,3 +443,18 @@ a:hover {
 }
 
 
+/* HAWKING PAGE */
+
+.hawkcontain {
+    display: flex;
+    width: 90vw;
+    gap: 3vw;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.hawking {
+    width: 50vw;
+    margin: auto;
+}
