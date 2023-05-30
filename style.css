@@ -31,7 +31,7 @@ a:hover {
     flex-wrap: wrap;
     justify-content:center;
     align-content: center;
-    padding: 0vw;
+    padding: 0.4vw;
     border: 1px solid rgb(192, 142, 151);
     background-color: rgb(227, 204, 208);
 }
@@ -39,17 +39,35 @@ a:hover {
 .navbutton {   
     border: none;
     background-color: transparent;
-    font-size: 3vw;
-    font-family: 'Dancing Script', cursive;
+    font-size: 2vw;
+    font-family: 'Minion Variable Concept', cursive;
     text-shadow: 2px 2px rgb(130, 96, 102);
 }
 
 .logo {
-    width: 9vw;
+    height: 3vw;
     padding: none;
-    margin: none;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-right: 100px;
+    justify-self: start;
    }
 
+   .hamcontain {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: start;
+    background-color: rgb(227, 204, 208);
+    border: solid 1px rgb(192, 142, 151);
+    border-radius: 10%;
+   }
+
+   .logosmall {
+    margin:auto;
+    height: 4vw;
+    margin-right: 10vw;
+}
 
             /* Hamburger nav  */
     .hidden {
@@ -68,7 +86,8 @@ a:hover {
       padding: 10px;
       text-decoration: none;
       color: rgb(28, 26, 26);
-      background: rgb(201, 185, 185, .4);
+      background: rgb(227, 204, 208, 0.9);
+      border: solid 1px rgb(192, 142, 151, 0.4);
     }
    
     /* (B) SHOW HAMBURGER ICON */
@@ -82,7 +101,7 @@ a:hover {
   
     /* (C) TOGGLE SHOW/HIDE MENU */
     #hamitems { display: none; }
-    #hamnav input:checked ~ #hamitems { display: block; }
+    #hamnav input:checked ~ #hamitems { display:block; position: absolute; z-index: 5; width: 40vw;}
 
  
 
@@ -188,10 +207,6 @@ a:hover {
     font-family: 'Dancing Script', cursive;
 }
 
-
-             /* My cards */
-
-
              
              /* Footer */
 
@@ -256,6 +271,10 @@ a:hover {
     #hamnav, #hamitems {
         display: none;
     }
+
+    .logosmall {
+        display: none;
+    }
 }
 
 
@@ -276,9 +295,15 @@ a:hover {
         display: none;
     }
 
+    .heroimg {
+        width: 50vw;
+        margin-left: 5vw;
+        margin-top: 9vw;
+        margin-bottom: -3vw;
+    }
 }
 
-/* increase size for small screens 972 */
+/* increase size for small screens */
 
 @media only screen and (max-width: 972px) {
 
@@ -301,6 +326,8 @@ a:hover {
     .my_work_button {
         font-size: 3vw;
     }
+
+
 
 }
 
@@ -385,15 +412,16 @@ a:hover {
 
 #footer h3 {
     font-size: 1.5vw;
-    width: 200px;
-    padding-left: 20vw;
-    padding-right: 20vw;
+    width: 250px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin: auto;
     
 }
 
 #footer {
     width: 60vw;
-    height: 15vw;
+    height: 10vw;
     margin: auto;
     margin-top:3vw ;
 }
