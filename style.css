@@ -142,8 +142,7 @@ a:hover {
 
 .my_name {
     border-bottom: 1px solid rgb(192, 142, 151);
-    color: rgb(3, 3, 3);
-    text-shadow: 2px 2px rgb(192, 142, 151);
+    color: rgb(53, 46, 46);
     font-family: 'Dancing Script', cursive;
     font-size: 2.5vw;
 }
@@ -164,9 +163,9 @@ a:hover {
     padding: 1vw;
     font-size: 1vw;
     font-family: 'Minion Variable Concept', sans-serif, serif;
-    border: 1px solid rgb(192, 142, 151);
     background-color: rgb(227, 204, 208);
     color: rgb(78, 55, 55);
+    border: none;
     border-radius: 10%;
     
 }
@@ -207,6 +206,7 @@ a:hover {
     font-size: 1.5vw;
     font-family: 'Minion Variable Concept', sans-serif, serif;
     border-radius: 10%;
+    color: rgb(53, 46, 46);
 }
 
              
@@ -234,6 +234,7 @@ a:hover {
     border-bottom: solid 1px rgb(130, 96, 102);
     margin-bottom: 1vw;
     border-radius: 10%;
+    color: rgb(53, 46, 46);
     
 }
 
@@ -314,7 +315,8 @@ a:hover {
 @media only screen and (max-width: 972px) {
 
     .my-work-title {
-        font-size: 3.9vw;
+        font-size: 3vw;
+        margin: -1vw;
     }
 
     .my_name {
@@ -333,7 +335,10 @@ a:hover {
         font-size: 3vw;
     }
 
-
+    #footer h3 {
+        font-size: 3vw;
+        
+    }
 
 }
 
@@ -348,6 +353,7 @@ a:hover {
     margin: auto;
     height: 3vw;
     gap: 7vw;
+    margin-top: -3vw;
 }
 
 .navbutton {   
@@ -355,7 +361,7 @@ a:hover {
 }
 
 .logo {
-    width: 9vw;
+    width: 10vw;
 }
 
 
@@ -408,6 +414,7 @@ a:hover {
 }
 
 .soft-logo {
+    margin-top: 20px;
     width: 4vw;
 }
 
@@ -470,6 +477,30 @@ a:hover {
     margin-top: 4vw;
 }
 
+@media only screen and (min-width: 971px) {
+
+    .herocontain {
+        width: 60vw;
+    }
+
+    .hero {
+        width: 40vw;
+        margin-left: 40%;
+        margin-right: 40%;
+        margin-top: 1vw;
+    }
+
+    .pagetitle {
+        font-size: 2vw;
+        width: 60vw;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: -10px;
+        
+    }
+
+}
+
 
 
 /* TANTALIZING DESIGN AND SLITHERING SANCTUARY PAGE */
@@ -481,14 +512,20 @@ a:hover {
     flex-wrap: wrap;
     align-content: center;
     gap: 2vw;
+    width: 70vw;
+    margin: auto;
 
 }
 
 
 .ttdhead {
-    font-size: 3vw;
+    font-size: 2vw;
     text-shadow: 2px 2px rgb(192, 142, 151);
     border-bottom: 1px solid rgb(192, 142, 151);
+    width: 70vw;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
@@ -501,6 +538,9 @@ a:hover {
     justify-content: center;
     margin-bottom: 5vw;
     border-bottom: 1px solid rgb(192, 142, 151);
+    width: 70vw;
+    margin-bottom: 50px;
+
 }
 
 .description {
@@ -530,7 +570,7 @@ a:hover {
 
 
 
-@media screen and (max-width:724px)  {
+@media screen and (max-width:1508px)  {
     
     .flexrow {
         display: flex;
@@ -547,12 +587,13 @@ a:hover {
     }
 
     .ttdhead {
-        font-size: 5vw;
+        font-size: 3vw;
     }
 
     .description {
         padding: 20px;
         border-bottom: 1px solid rgb(192, 142, 151);
+        font-size: 1.5vw;
     }
 
     .flexrow {
@@ -572,9 +613,6 @@ a:hover {
         width: 200px;
     }
 
-    .description {
-        font-size: 2.5vw;
-    }
 }
 
 
@@ -595,6 +633,9 @@ a:hover {
         margin-right: 28%;
     }
 
+    .description {
+        font-size: 1vw;
+    }
 }
 
 
