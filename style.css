@@ -31,7 +31,7 @@ a:hover {
     flex-wrap: wrap;
     justify-content:center;
     align-content: center;
-    padding: 2vw;
+    padding: 0vw;
     border: 1px solid rgb(192, 142, 151);
     background-color: rgb(227, 204, 208);
 }
@@ -43,6 +43,12 @@ a:hover {
     font-family: 'Dancing Script', cursive;
     text-shadow: 2px 2px rgb(130, 96, 102);
 }
+
+.logo {
+    width: 9vw;
+    padding: none;
+    margin: none;
+   }
 
 
             /* Hamburger nav  */
@@ -94,20 +100,15 @@ a:hover {
 .herocontain {
     display: flex;
     justify-content: center;
-    margin: 5vw;
+    margin-top: 4vw;
 }
 
 
 .heroimg {
     width: 65vw;
+    margin-left: vw;
     position: relative;
     border: 2px solid rgb(192, 142, 151);
-}
-
-.logo {
- position: absolute;
- width: 13vw;
- margin-top: -5vw;
 }
 
 
@@ -209,7 +210,7 @@ a:hover {
 #footer h3 {
     padding: 1vw;
     margin: auto;
-    font-size: 3vw;
+    font-size: 4vw;
     padding-left: 30vw;
     padding-right: 30vw;
     text-shadow: 2px 2px rgb(192, 142, 151);
@@ -221,14 +222,13 @@ a:hover {
 #footer address {
     padding: 1vw;
     margin: auto;
-    font-size: 2vw;
     font-family:'Times New Roman', Times, serif;
 }
 
 #footer a {
     padding: 1vw;
     margin: auto;
-    font-size: 2vw;
+    font-size: 2.5vw;
     font-family:'Times New Roman', Times, serif;
 }
 
@@ -276,21 +276,134 @@ a:hover {
         display: none;
     }
 
-    .intro-p {
-        font-size: 2.5vw;
+}
+
+/* increase size for small screens 972 */
+
+@media only screen and (max-width: 972px) {
+
+    .my-work-title {
+        font-size: 4.5vw;
+    }
+
+    .my_name {
+        font-size: 3.3vw;
     }
 
     .education_paragraph {
-        font-size: 2.7vw;
+        font-size: 2.8vw;
     }
+
+    .intro-p {
+        font-size: 2.8vw;
+    }
+
+    .my_work_button {
+        font-size: 3vw;
+    }
+
 }
 
 
 
+/* Reduce sizes for large browser */
 
+@media only screen and (min-width: 971px) {
 
+.navbar {
+    max-width: 60vw;
+    margin: auto;
+    height: 3vw;
+    gap: 7vw;
+}
 
+.navbutton {   
+    font-size: 1.3vw;
+}
 
+.logo {
+    width: 4vw;
+}
+
+.heroimg {
+    width: 40vw;
+    margin-top: -1vw;
+    margin-bottom: 2vw;
+    margin-left: 16vw;
+    justify-content: start;
+}
+
+.about-containter {
+    width: 60vw;
+    margin: auto;
+    margin-bottom: 4vw;
+}
+
+.headshot {
+    width: 20%;
+}
+
+.my-work-title {
+    font-size: 2vw;
+    padding: 0.5px;
+    width: 60vw;
+    margin: auto;
+    margin-bottom: 0px;
+}
+
+.my_name {
+    font-size: 2vw;
+}
+
+.education_paragraph {
+    width: 60vw;
+    margin: auto;
+    margin-top: 4vw;
+    font-size: 1vw;
+}
+
+.intro-p {
+    font-size: 1vw;
+}
+
+.my_work_button {
+    font-size: 1.5vw;
+    padding: 0px;
+    width: 12vw;
+    height: 3.3vw;
+}
+
+.soft-logo {
+    width: 4vw;
+}
+
+#footer a {
+    padding: 0.5vw;
+    margin: auto;
+    font-size: 1.2vw;
+}
+
+#footer h3 {
+    font-size: 1.5vw;
+    width: 200px;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    
+}
+
+#footer {
+    width: 60vw;
+    height: 15vw;
+    margin: auto;
+    margin-top:3vw ;
+}
+
+.footercontain {
+    margin: auto;
+    margin-top: -0.1vw;
+    gap: 2vw;
+}
+}
 
 
 
